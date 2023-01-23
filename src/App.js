@@ -5,15 +5,11 @@ import SignUp from "./components/SignUp";
 
 function App() {
   return (
-    <div className="bg-blue-800 border-4 border-blue-800 p-4">
       <Routes>
         <Route path="/home" element={<Home/>}/>
-        <Route path="/" element={<SignUp/>}/>
         <Route path="/signin" element={<SignIn/>}/>
-      </Routes>
-      {/* <SignUp/> */}
-     
-    </div>
+        <Route path="/" element={<SignUp/>}/>
+      </Routes> 
   );
 }
 

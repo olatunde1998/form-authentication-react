@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Unbounded', cursive;
+}
+#left-container{
+    background-image: url("assets/img/img2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 50%;
+    background-position: 65% 150px;
+    z-index: 1;
+}
+input:focus + *{
+    color: rgb(49, 49, 49);
+}
