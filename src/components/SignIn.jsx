@@ -1,8 +1,8 @@
 import {
   signInWithEmailAndPassword,
   signInWithPopup,
-  GoogleAuthProvider,
-  GithubAuthProvider,
+  // GoogleAuthProvider,
+  // GithubAuthProvider,
 } from "firebase/auth";
 import { useState } from "react";
 import { auth, provider,providerGithub } from "../firebase";
@@ -37,8 +37,8 @@ const SignIn = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
+        // const credential = GoogleAuthProvider.credentialFromResult(result);
+        // const token = credential.accessToken;
         // The signed-in user info.
         // const user = result.user;
         // ...
@@ -62,8 +62,8 @@ const SignIn = () => {
     signInWithPopup(auth, providerGithub)
   .then((result) => {
     // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-    const credential = GithubAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
+    // const credential = GithubAuthProvider.credentialFromResult(result);
+    // const token = credential.accessToken;
 
     // The signed-in user info.
     // const user = result.user;
